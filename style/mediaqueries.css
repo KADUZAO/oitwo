@@ -1,0 +1,110 @@
+@media screen and (min-width:1080px) {
+    .form form{
+        width: 80%;
+    }
+    .form form .conatinerone-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .text {
+        width: 100%;
+    }
+
+    .price img {
+        width: 70%;
+    }
+
+    .topcs {
+        display: block;
+    }
+
+    .topc {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .topc-ofert {
+        display: block;
+    }
+
+    .ofert {
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+
+    .content-five {
+        display: block;
+    }
+
+    .left, .right {
+        width: 70%;
+        margin: auto;
+    }
+
+    .left p {
+        text-align: center;
+    }
+
+    .left {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .form form {
+        width: 90%;
+    }
+
+    .form form .conatinerone-form {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .button {
+        width: 60%;
+    }
+
+    .title-container {
+        font-size: 2.3rem;
+    }
+
+    .topc {
+        width: 90%;
+    }
+
+    .ofert {
+        width: 90%;
+    }
+
+    .left, .right {
+        width: 90%;
+    }
+
+    .content-ofert .button {
+        width: 100%;
+    }
+
+    #what {
+        width: 100%;
+    }
+}

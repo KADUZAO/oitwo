@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mediaqueries.css">
+    <link rel="shortcut icon" href="./image/oi.webp">
+
+    <script src="https://kit.fontawesome.com/91224fe5f5.js" crossorigin="anonymous"></script>
+
+    <title>OI</title>
+</head>
+<body>
+    <div id="whats">
+        <a href="https://api.whatsapp.com/send?phone=555186874515&text=Oii%2C%20Gostaria%20de%20garantir%20minha%20vaga%20para%20a%20pr%C3%A9-venda%20da%20Oi">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <div id="form" class="form" style="position: fixed;width: 100vw;height: 100vh;background-color: rgba(0, 0, 0, 0.5);z-index: 1;" data-anime="top">
+        <form style="background: var(--color-back);">
+            <div class="exit">
+                <img src="./image/close.webp">
+            </div>
+            <div class="conatinerone-form">
+                <div class="name">
+                    <label for="">Nome:</label>
+                    <input type="text" name="nome" placeholder="Rodrigo Melo de Santos" required maxlength="45" oninput="this.value = this.value.replace(/[0-9.-]/g, '').replace(/(\..*)\./g, '$1');">
+                </div>
+                <div class="street">
+                    <label for="">Rua:</label>
+                    <input type="text" placeholder="Rua" maxlength="50">
+                </div>
+                <div class="number">
+                    <label for="">Número da fachada:</label>
+                    <input type="text" oninput="this.value = this.value.replace(/[^0-9.-]/g, '').replace(/(\..*)\./g, '$1');" maxlength="4">
+                </div>
+                <div class="complement">
+                    <label for="">Complemento:</label>
+                    <input type="text" placeholder="Condominio" maxlength="30">
+                </div>
+                <div class="cep">
+                    <label for="">CEP:</label>
+                    <input type="text" name="cep" placeholder="00000-000" minlength="9" maxlength="9">
+                </div>
+                <div class="phone">
+                    <label for="">Telefone 1:</label>
+                    <input type="tel" placeholder="(XX) XXXX-XXXXX" minlength="13" required>
+                </div>
+                <div class="phone">
+                    <label for="">Telefone 2 (Opcional):</label>
+                    <input type="tel" placeholder="(XX) XXXX-XXXXX" minlength="13">
+                </div>
+                <div class="email">
+                    <label for="">E-mail:</label>
+                    <input type="email" name="email" maxlength="55" placeholder="seuemail@seudominio" required>
+                </div>
+                <section class="plan-form">
+                    <label for="select">Eu quero o plano de</label>
+                    <select id="select">
+                        <option value="200mb">200MB</option>
+                        <option value="400mb">400MB</option>
+                        <option value="1g">1G</option>
+                    </select>
+                </section>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./image/oi.webp" alt="OI" type="image.webp">
+            </div>
+            <div class="contact">
+                <p>Ligue agora:</p>
+                <div>
+                    <p>(51) 98687-4515</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="containerOne">
+            <div class="container-one">
+                <div class="text">
+                    <p class="green title">Mude agora para oi<br>FIBRA 200MB</p>
+                    <div class="price">
+                        <p class="debt">DESCONTO DE R$20 NO DEBITO EM CONTA</p>
+                        <img src="./image/price.webp" alt="Por 99,90/mês">
+                    </div>
+                    <p class="propost-top">A melhor Internet de alta velocidade, por um preço acessível.
+                    <br><br>Instalação 100% Gratuita, em até 05 dias úteis.</p>
+                    
+                    <div class="button button__go__to__form">
+                        <p>Consulte disponibilidade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="containerTwo">
+            <div class="container-two">
+                <p class="green title-container" data-anime="top">Confira as vantagens e benefícios de ser cliente Oi FIBRA.</p>
+
+                <div class="topcs">
+                    <div class="topc topc-one" data-anime="left">
+                        <div class="image">
+                            <img src="./image/logotopc.webp" alt="OI">
+                        </div>
+                        <div class="text">
+                            <p><strong>Acesso Gratuito: Oi Play</strong>
+                            <br><br>Tenha acesso a canais em HD sem aumentos na sua fatura.</p>
+                        </div>
+                    </div>
+                    <div class="topc topc-two" data-anime="top">
+                        <div class="image">
+                            <img src="./image/din.webp" alt="Dinheiro">
+                        </div>
+                        <div class="text">
+                            <p><strong>R$20,00 Desconto em débito na conta.</strong>
+                            <br><br>Cadastrando a sua oi fibra com o pagamento automático no débito em conta, você ganha um desconto exclusivo.</p>
+                        </div>
+                    </div>
+                    <div class="topc topc-three" data-anime="right">
+                        <div class="text">
+                            <p><strong>Ligações ilimitadas para todo o Brasil!</strong>
+                            <br><br>para fixo e móvel de qualquer operadora usando o código 31 ou 14<br><br>+<br><br>OI ÁUDIO NEWS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="containerThree">
+            <div class="container-two">
+                <p class="title-container" style="color: #fff;" data-anime="top">Confira agora todos os nossos planos disponíveis na sua região!</p>
+
+                <div class="topc-ofert">
+                    <div class="ofert ofert-one" data-anime="left">
+                        <div class="content-ofert">
+                            <p class="fibra">OI FIBRA</p>
+                            <p class="mb">200MB</p>
+                            <div class="traco"></div>
+                            
+                            <div class="benefics">
+                                <p class="benefics">Oi Leitura</p>
+                                <p class="benefics">Oi Notícias</p>
+                                <p class="benefics">Oi Revistas Esportes 4</p>
+                            </div>
+                            <div class="traco"></div>
+
+                            <div class="price-ofert">
+                                <p class="debt">DESCONTO DE R$20 NO DEBITO EM CONTA</p>
+                                <img src="./image/pricetopcone.webp" alt="99,90 Reais por mês">
+                            </div>
+
+                            <div class="button button__go__to__form">
+                                <p>Consulte disponibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ofert ofert-two" data-anime="top">
+                        <div id="up">
+                            <div class="up">
+                                <p>Melhor Oferta</p>
+                            </div>
+                        </div>
+                        <div class="content-ofert">
+                            <p class="fibra">OI FIBRA</p>
+                            <p class="mb">400MB</p>
+
+                            <div class="traco"></div>
+                            
+                                <div class="benefics">
+                                    <p class="benefics">Oi Leitura</p>
+                                    <p class="benefics">Oi Notícias</p>
+                                    <p class="benefics">Oi Expert Remoto</p>
+                                    <p class="benefics">Oi Revistas Esportes 4</p>
+                                </div>
+                            <div class="traco"></div>
+
+                            <div class="price-ofert">
+                                <p class="debt">DESCONTO DE R$20 NO DEBITO EM CONTA</p>
+                                <img src="./image/pricetopctwo.webp" alt="149,90 Reais por mês">
+                            </div>
+
+                            <div class="button button__go__to__form">
+                                    <p>Consulte disponibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ofert ofert-three" data-anime="right">
+                        <div class="content-ofert">
+                            <p class="fibra">OI FIBRA</p>
+                            <p class="mb">1G</p>
+                            <div class="traco"></div>
+                            
+                            <div class="benefics">
+                                <p class="benefics">Oi Leitura</p>
+                                <p class="benefics">Oi Notícias</p>
+                                <p class="benefics">Oi Revistas Esportes 4</p>
+                                <p class="benefics">Oi Expert Remoto</p>
+                            </div>
+                            <div class="traco"></div>
+
+                            <div class="price-ofert">
+                                <p class="debt">DESCONTO DE R$20 NO DEBITO EM CONTA</p>
+                                <img src="./image/73970111.png" alt="169,90 Reais por mês">
+                            </div>
+
+                            <div class="button button__go__to__form">
+                                    <p>Consulte disponibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="containerFour">
+            <div class="container-four">
+                <div class="text">
+                    <p class="green title" data-anime="right">Você está sofrendo com problemas na sua conexão e não consegue resolver?</p>
+                    <p class="propost-top" data-anime="right">Na oi além de você ganhar vantagens especiais, nós estamos um passo a frente pensando em trazer as melhores soluções para você.
+                    <br><br>Com o App Oi serviço, você está a poucos cliques de solucionar qualquer problema que você possa ter com a Internet na sua casa.
+                    <br><br>De maneira rápida, simples e efetiva.</p>
+                    
+                    <div class="button button__go__to__form">
+                        <p>Consulte disponibilidade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="containerFive">
+            <div class="container-five">
+                <div class="content-five">
+                    <div class="left"  data-anime="left">
+                        <p>Aproveite os canais exclusivos assinando o pacote Oi FIBRA 400MB</p>
+                        <img src="./image/tv.webp">
+                    </div>
+                    <div class="right" data-anime="right">
+                        <div class="content-ofert">
+                            <p class="fibra">OI FIBRA</p>
+                            <p class="mb">400MB</p>
+
+                            <div class="traco"></div>
+                            
+                            <div class="images">
+                                <img src="./image/plays.webp" alt="HBO GO, discovery kidsplus, Paramount +">
+                            </div>
+                            <p style="margin-top: 1rem;">Filmes, seriés e canais pelo Oi Play</p>
+                            <div class="traco"></div>
+
+                            <div class="price-ofert">
+                                <img src="./image/pricetopctwo.webp" alt="149,90 Reais por mês">
+                            </div>
+
+                            <div class="button button__go__to__form">
+                                <p>Consulte disponibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-end">
+                    <p class="datebayo green" data-anime="top">Não fique de fora, garanta sua Oi Fibra sem sair de casa, essa oportunidade é somente para quem solicitar através da nossa página.</p>
+                    <p class="baka" data-anime="top">Preencha o nosso formulário que dentro de 24 horas entraremos em contato com você, confirmando a viabilidade da sua instalação e finalizando o seu cadastro.</p>
+
+                    <div class="button button__go__to__form" data-anime="right">
+                        <p>Preencha o formulário</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="end">
+            <div class="end">
+                <div class="title">
+                    <p style="color: #fff;text-align: center;">FAQ</p>
+                </div>
+
+                <div id="what">
+                    <div class="what">
+                        <div class="circle">
+                            <img src="./image/circulo.webp" style="">
+                        </div>
+                        <p>Como funciona a instalação?</p>
+                        <div class="faq-oculto">
+                            <p>A instalação é gratuita e ocorre em até 05 dias úteis, após a conclusão da sua solicitação. O horário para instalação será entre 08h e 20h, necessário uma pessoa maior de idade no endereço.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="what">
+                    <div class="what">
+                        <div class="circle">
+                            <img src="./image/circulo.webp" style="">
+                        </div>
+                        <p>Qual velocidade de banda está disponível?</p>
+                        <div class="faq-oculto">
+                            <p>Oferta 01: 200 MB downaload com 60MB de upload.<br><br>Oferta 02: 400MB de downaload com 100MB de upload.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="what">
+                    <div class="what">
+                        <div class="circle">
+                            <img src="./image/circulo.webp" style="">
+                        </div>
+                        <p>Sobre as ligações</p>
+                        <div class="faq-oculto">
+                            <p>Telefone Fixo ilimitado para móvel e fixo de todo Brasil. Para ligações DDD, use 14 ou 31.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="what">
+                    <div class="what">
+                        <div class="circle">
+                            <img src="./image/circulo.webp" style="">
+                        </div>
+                        <p>Como funciona o débito automático em conta?</p>
+                        <div class="faq-oculto">
+                            <p>Valor mensal reduzido em R$ 20,00/mês pra clientes que ativarem o Débito Automático em Conta. O desconto é válido somente pra novas assinaturas no ato da compra. Em caso de cancelamento do Débito Automático, o benefício é suspenso. O desconto é válido por tempo indeterminado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="warning">
+        Obrigado! Entraremos em contato o mais breve possível.<span onclick="$(this).parent().remove();">X</span>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        $("input[type=tel]").mask("(00) 000000000");
+        $("input[name=cep]").mask("00000-000");
+        $(".what").click(function(){
+            if($(this).children(".faq-oculto").css("display") == "none"){
+                console.log($(this).children(".circle").children("img").css("transform", "rotate(0deg)"));
+                $(this).children(".faq-oculto").slideDown("slow");
+            }
+            else{
+                $(this).children(".circle").children("img").css("transform", "rotate(-90deg)");
+                $(this).children(".faq-oculto").slideUp("slow");
+            }
+            
+        });
+
+        $(document).ready(function(){
+        var url = window.location.href;
+
+        if (url.indexOf('?') > -1) {
+            $('#warning').fadeIn(1000);
+            setTimeout(function(){$("#warning").fadeOut(1000, function(){$("#warning").remove();});}, 6000);
+            var noHashURL = url.split("?")[0];
+		    window.history.replaceState('', document.title, noHashURL);
+        }
+    });
+    
+        const target = document.querySelectorAll("[data-anime]");
+            const animationClass = 'animate';
+            
+            function animeScroll() {
+                const windowTope = window.pageYOffset + ((window.innerHeight * 3) / 4)
+                target.forEach(function(elemento) {
+                    if((windowTope) > elemento.offsetTop) {
+                        elemento.classList.add(animationClass);
+                    } else {
+                        elemento.classList.remove(animationClass);
+                    }
+                })
+            }
+            
+            animeScroll();
+            
+            window.addEventListener("scroll", function() {
+                animeScroll();
+            })
+    
+            $(".button__go__to__form").click(function(){
+                $("#form").css("display", "flex");   
+            });
+            $(".exit").click(function(){
+                $("#form").hide();
+            });
+    </script>
+    <style>
+        #warning{
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: clamp(300px, 33%,33%);
+            border: solid 1px var(--color-green);
+            box-shadow: 0px 3px 5px var(--color-green);
+            padding: 15px 15px 10px;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+        #warning span{
+            display: block;
+            position: relative;
+            text-align: center;
+            font-weight: bolder;
+            color: var(--color-green);
+            cursor: pointer;
+        }
+        @media screen and (max-width: 767px){
+            #warning{
+                margin-left: -17px;
+                margin-top: -17px;
+            }
+        }
+    </style>
+</body>
+</html>
